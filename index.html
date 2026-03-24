@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehedi Book Corner</title>
+    <!-- SEO & Social Meta Tags -->
+    <meta name="description"
+        content="Mehedi Book Corner - Your trusted source for academic, islamic, novel, and kids books.">
+    <meta property="og:title" content="Mehedi Book Corner">
+    <meta property="og:description" content="Your trusted source for academic, islamic, novel, and kids books.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css?v=5">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="sticky-nav" id="main-header">
+        <div class="sticky-nav-container">
+            <div class="sticky-nav-logo">
+                <h1 id="logo-text">মেহেদী বুক কর্নার</h1>
+            </div>
+            <nav class="sticky-nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="active">হোম</a></li>
+                    <li><a href="#shop">বইসমূহ</a></li>
+                    <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                    <li><a href="#contact">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/8801754463744" target="_blank" class="header-btn" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=105702565614247" target="_blank" class="header-btn"
+                    aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <label class="theme-switch" aria-label="Toggle Dark Mode">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="theme-slider"></span>
+                </label>
+                <button id="mobile-menu-btn" class="header-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1 class="hero-title">পছন্দের বইটি সহ সব বই পান এক ঠিকানায়।</h1>
+                <p class="hero-subtitle">আপনার প্রিয় বইগুলো এখন হাতের মুঠোয়। দ্রুত এবং সহজে অর্ডার করুন।</p>
+                <a href="#shop" class="uiverse-launch-btn">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <span>বই দেখুন</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section id="featured" class="featured-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="dynamic-featured-title">বইমেলায় সাড়া জাগানো বই</h2>
+                    <p class="section-desc" id="dynamic-featured-subtitle">জনপ্রিয় কিছু বই যা আপনার সংগ্রহে রাখা চাই</p>
+                </div>
+                <div class="featured-slider-wrapper" style="position: relative;">
+                    <button id="featured-prev" class="slider-btn" aria-label="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="featured-slider" id="featured-grid">
+                        <!-- Featured books will be injected here -->
+                    </div>
+
+                    <button id="featured-next" class="slider-btn" aria-label="Next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="shop-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">আমাদের সংগ্রহ</h2>
+                    <p class="section-desc">জনপ্রিয় এবং নতুন সব বইয়ের সমাহার</p>
+                </div>
+
+                <!-- Filters & Search -->
+                <!-- Cosmic Search Bar -->
+                <div id="search-container">
+                    <div class="nebula"></div>
+                    <div class="starfield"></div>
+                    <div class="cosmic-dust"></div>
+                    <div class="cosmic-dust"></div>
+                    <div class="cosmic-dust"></div>
+                    <div class="stardust"></div>
+                    <div class="cosmic-ring"></div>
+                    <div id="main">
+                        <input class="input" id="search-input" name="text" type="text"
+                            placeholder="বইয়ের নাম দিয়ে খুঁজুন..." />
+                        <div id="input-mask"></div>
+                        <div id="cosmic-glow"></div>
+                        <div id="search-icon">
+                            <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                stroke="url(#cosmic-search)" fill="none" height="24" width="24" viewBox="0 0 24 24">
+                                <circle r="8" cy="11" cx="11"></circle>
+                                <line y2="16.65" x2="16.65" y1="21" x1="21"></line>
+                                <defs>
+                                    <linearGradient gradientTransform="rotate(45)" id="cosmic-search">
+                                        <stop stop-color="#a9c7ff" offset="0%"></stop>
+                                        <stop stop-color="#6e8cff" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back Button -->
+                <div style="text-align: center;">
+                    <button id="back-to-categories" class="btn btn-secondary"
+                        style="display: none; margin-bottom: 2rem; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);">
+                        <i class="fas fa-arrow-left"></i> সকল ক্যাটাগরি
+                    </button>
+                </div>
+
+                <!-- Category Grid -->
+                <div id="category-grid" class="category-grid">
+                    <!-- Categories will be injected here via JS -->
+                </div>
+
+                <!-- Book Grid -->
+                <div id="book-grid" class="book-grid" style="display: none;">
+                    <!-- Books will be injected here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2 class="section-title">আমাদের সম্পর্কে</h2>
+                    <p>মেহেদী বুক কর্নার একটি অনলাইন বুকশপ যেখানে আপনি খুব সহজেই আপনার পছন্দের বই অর্ডার করতে পারবেন।
+                        আমরা সারা বাংলাদেশে বই ডেলিভারি দিয়ে থাকি।</p>
+
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>১৪,০০০+ অর্ডার সম্পন্ন</h3>
+                                <p>বিশ্বস্ততার সাথে দীর্ঘ দিন ধরে সেবা দিয়ে আসছি।</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <div>
+                                <h3>দ্রুত ডেলিভারি</h3>
+                                <p>আমরা চেষ্টা করি দ্রুততম সময়ে বই পৌঁছে দিতে।</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-book-open"></i>
+                            <div>
+                                <h3>বিশাল সংগ্রহ</h3>
+                                <p>আমাদের কাছে রয়েছে বিভিন্ন ক্যাটাগরির হাজারো বই।</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h3>সহজ অর্ডার</h3>
+                                <p>জটিলতা ছাড়াই হোয়াটসঅ্যাপে অর্ডার করুন।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-content">
+                <h2 class="section-title">যোগাযোগ করুন</h2>
+                <p>বই অর্ডার করতে বা যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ করুন।</p>
+                <a href="https://wa.me/8801754463744" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> হোয়াটসঅ্যাপে মেসেজ দিন
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=105702565614247" class="btn btn-facebook"
+                    target="_blank" style="margin-left: 10px;">
+                    <i class="fab fa-facebook"></i> ফেসবুকে মেসেজ দিন
+                </a>
+                <a href="https://www.google.com/maps/place/Mehedi+book+corner/@23.7330475,90.3852789,17z/data=!3m1!4b1!4m6!3m5!1s0x3755b987919d4f3f:0xf75a1c79b53fbc1!8m2!3d23.7330475!4d90.3852789!16s%2Fg%2F11pvl_xhk7"
+                    class="btn btn-primary" target="_blank"
+                    style="margin-left: 10px; background-color: #4285F4; border-color: #4285F4;">
+                    <i class="fas fa-map-marker-alt"></i> আমাদের ঠিকানা (Location)
+                </a>
+
+                <!-- Map Preview -->
+                <div class="map-container"
+                    style="margin-top: 3rem; margin-inline: auto; max-width: 700px; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-lg);">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.541!2d90.3852789!3d23.7330475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b987919d4f3f%3A0xf75a1c79b53fbc1!2sMehedi%20book%20corner!5e0!3m2!1sen!2sbd!4v1715694382586!5m2!1sen!2sbd"
+                        width="100%" height="320" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">গ্রাহকদের মতামত</h2>
+                    <p class="section-desc">আমাদের সম্মানিত গ্রাহকদের কিছু কথা</p>
+                </div>
+                <div class="slider">
+                    <div class="slide-track">
+                        <!-- Slides will be injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>মেহেদী বুক কর্নার</h2>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-btn">Facebook Page</a>
+                <a href="admin.html" class="footer-btn">Admin Login</a>
+                <a href="privacy.html" class="footer-btn">Privacy Policy</a>
+                <a href="terms.html" class="footer-btn">Terms & Conditions</a>
+            </div>
+            <p class="copyright">&copy; 2026 Mehedi Book Corner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay" onclick="window.toggleCart()"></div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h2><i class="fas fa-shopping-cart"></i> আপনার কার্ট</h2>
+            <button onclick="window.toggleCart()"
+                style="background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-secondary);"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div id="cart-items"
+            style="flex-grow: 1; overflow-y: auto; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 1rem; padding-right: 0.5rem;">
+            <!-- Rendered cart items -->
+        </div>
+        <div
+            style="display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+            <button class="btn btn-whatsapp" onclick="window.checkoutCart('whatsapp')" id="checkout-wa-btn"
+                style="width: 100%;">
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+            </button>
+            <button class="btn btn-facebook" onclick="window.checkoutCart('facebook')" id="checkout-fb-btn"
+                style="width: 100%;">
+                <i class="fab fa-facebook"></i> Order via Facebook Page
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Cart Button -->
+    <div id="cart-button" class="floating-cart" onclick="window.toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <div id="cart-badge" class="cart-badge" style="display: none;">0</div>
+    </div>
+
+    <!-- Fast Checkout Modal -->
+    <div id="checkout-modal" class="cart-overlay" onclick="if(event.target === this) window.closeCheckoutModal()"
+        style="z-index: 1002;">
+        <div
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--card-bg); padding: 2rem; border-radius: 1rem; max-width: 90%; width: 400px; text-align: center; box-shadow: var(--shadow-lg);">
+            <h3 style="margin-bottom: 1.5rem;">Select the order method</h3>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <button class="btn btn-whatsapp" id="modal-wa-btn" style="width: 100%;">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+                <button class="btn btn-facebook" id="modal-fb-btn" style="width: 100%;">
+                    <i class="fab fa-facebook"></i> Order via Facebook
+                </button>
+            </div>
+            <button onclick="window.closeCheckoutModal()"
+                style="margin-top: 1.5rem; background: none; border: none; color: var(--text-secondary); cursor: pointer; text-decoration: underline;">Cancel</button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
